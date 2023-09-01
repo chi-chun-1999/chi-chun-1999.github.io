@@ -1,0 +1,90 @@
+baseURL = 'https://chi-chun-1999.github.io/'
+languageCode = 'en-us'
+title = 'Chun Write'
+theme = ["puppet","hugo-notice"]
+
+sectionPagesMenu = "main"
+hasCJKLanguage = true
+enableInlineShortcodes = true
+enableEmoji = true
+
+[menu]
+[[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = -100
+[[menu.main]]
+identifier = "categories"
+name = "categories"
+url = "/categories"
+weight = 1
+
+[params]
+author = "chi-chun"
+description = "學習筆記與生活記錄"
+keywords = "blog,developer,personal"
+img_home = "img/home_bg_5.jpeg"
+img_404 = "img/404-bg.jpg"
+
+useFaviconGenerator = true
+
+custom_js = []
+custom_css = [] # ["css/custom.css"]  Add your file to assets folder  [assets/css/custom.css]
+
+[params.sidebar]
+enable = true
+avatar = "img/home_bg.png"
+bio = "a personal website"
+
+[params.social]
+github = "chi-chun-1999"
+instagram ="c.chun.write"
+mail="justin11223350@gmail.com"
+
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      linkifyProtocol = 'https'
+      strikethrough = true
+      table = true
+      taskList = true
+      [markup.goldmark.extensions.typographer]
+        apostrophe = '&rsquo;'
+        disable = false
+        ellipsis = '&hellip;'
+        emDash = '&mdash;'
+        enDash = '&ndash;'
+        leftAngleQuote = '&laquo;'
+        leftDoubleQuote = '&ldquo;'
+        leftSingleQuote = '&lsquo;'
+        rightAngleQuote = '&raquo;'
+        rightDoubleQuote = '&rdquo;'
+        rightSingleQuote = '&rsquo;'
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = 'github'
+      wrapStandAloneImageWithinParagraph = true
+      [markup.goldmark.parser.attribute]
+        block = false
+        title = true
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = false
+      xhtml = false
+	
+
+[module]
+  [[module.imports]]
+    path = "github.com/martignoni/hugo-notice"
+  [[module.imports]]
+    path = "github.com/roninro/hugo-theme-puppet"
