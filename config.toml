@@ -83,8 +83,3 @@ mail="justin11223350@gmail.com"
       xhtml = false
 	
 
-[module]
-  [[module.imports]]
-    path = "github.com/martignoni/hugo-notice"
-  [[module.imports]]
-    path = "github.com/roninro/hugo-theme-puppet"
